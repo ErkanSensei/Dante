@@ -16,24 +16,32 @@ public class Select : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.UpArrow) && Grid.gemAt (x, y + 1)) {
 				if (Input.GetKey (KeyCode.LeftShift)) {
 					if (validSwap (selected, Grid.gemAt (x, y + 1))) {
+						swapAndSolve (selected, Grid.gemAt (x, y + 1));
+						++y;
 					}
 				} else
 					++y;
 			} else if (Input.GetKeyDown (KeyCode.DownArrow) && Grid.gemAt (x, y - 1)) {
 				if (Input.GetKey (KeyCode.LeftShift)) {
 					if (validSwap (selected, Grid.gemAt (x, y - 1))) {
+						swapAndSolve (selected, Grid.gemAt (x, y - 1));
+						--y;
 					}
 				} else
 					--y;
 			} else if (Input.GetKeyDown (KeyCode.RightArrow) && Grid.gemAt (x + 1, y)) {
 				if (Input.GetKey (KeyCode.LeftShift)) {
 					if (validSwap (selected, Grid.gemAt (x + 1, y))) {
+						swapAndSolve (selected, Grid.gemAt (x + 1, y));
+						++x;
 					}
 				} else
 					++x;
 			} else if (Input.GetKeyDown (KeyCode.LeftArrow) && Grid.gemAt (x - 1, y)) {
 				if (Input.GetKey (KeyCode.LeftShift)) {
 					if (validSwap (selected, Grid.gemAt (x - 1, y))) {
+						swapAndSolve (selected, Grid.gemAt (x - 1, y));
+						--x;
 					}
 				} else
 					--x;
@@ -55,4 +63,9 @@ public class Select : MonoBehaviour {
 		swap (a, b);
 		return res;
 	}
-}
+	void swapAndSolve(Gem a, Gem b) {
+		swap (a, b);
+		Grid.solveMatches (Grid.matchesAt (a.transform.position.x, a.transform.position.y));
+		Grid.solveMatches (Grid.matchesAt (a.transform.position.x, a.transform.position.y));
+	}
+	}
