@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Grid : MonoBehaviour {
 
@@ -26,6 +27,46 @@ public class Grid : MonoBehaviour {
 		return null;
 	}
 
+	public static List<Gem> matchesAt(float x, float y) {
+		List<Gem> res = new List<Gem> ();
+		Gem center = Grid.gemAt (x, y);
+		//check horizontally
+		List<Gem> hor = new List<Gem>();
+		hor.Add (center); // add your original gem
+		if (Grid.gemAt (x + 1, y) && Grid.gemAt (x + 1, y).sameType (center)) {
+			hor.Add (Grid.gemAt (x + 1, y));
+			if (Grid.gemAt (x + 2, y) && Grid.gemAt (x + 2, y).sameType (center))
+				hor.Add (Grid.gemAt (x + 2, y));
+
+		}
+		if (Grid.gemAt (x - 1, y) && Grid.gemAt (x - 1, y).sameType (center)) {
+			hor.Add (Grid.gemAt (x - 1, y));
+			if (Grid.gemAt (x - 2, y) && Grid.gemAt (x - 2, y).sameType (center))
+				hor.Add (Grid.gemAt (x - 2, y));
+
+		}
+		//if the count of gems next to each other are 3 or more, add to res
+		if (hor.Count >= 3)
+			res.AddRange (hor);
+
+		//check vertically
+		List<Gem> ver = new List<Gem> ();
+		ver.Add (center);
+		if (Grid.gemAt (x, y + 1) && Grid.gemAt (x, y + 1).sameType (center)) {
+			ver.Add (Grid.gemAt (x, y + 1));
+			if (Grid.gemAt (x, y + 2) && Grid.gemAt (x, y + 2).sameType (center))
+				ver.Add (Grid.gemAt (x, y + 2));
+		}
+		if (Grid.gemAt (x, y - 1) && Grid.gemAt (x, y - 1).sameType (center)) {
+			ver.Add (Grid.gemAt (x, y - 1));
+			if (Grid.gemAt (x, y - 2) && Grid.gemAt (x, y - 2).sameType (center))
+				ver.Add (Grid.gemAt (x, y - 2));
+		}
+		if (ver.Count >= 3)
+			res.AddRange (ver);
+		
+		return res;
+	}
 	void spawnAt(float x, float y) {
 		int index = Random.Range (0, gems.Length);
 		Instantiate (gems [index], new Vector2 (x, y), Quaternion.identity);
