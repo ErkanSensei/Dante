@@ -9,13 +9,17 @@ public class Grid : MonoBehaviour {
 
 	//Available Gems
 	public GameObject[] gems;
-
+	private int counter = 0;
 	// Update is called once per frame
 	void Update () {
 		//Spawn Gem in empty spaces of top row
-		for (int x = 0; x < w; ++x)
+		for (int x = 0; x < w; ++x) {
 			if (!gemAt (x, h - 1))
 				spawnAt (x, h - 1);
+			//If there's something below the gem, then solve matches for it
+			if (gemAt (x, h - 2))
+				solveMatches (matchesAt (x, h - 1));
+		}
 	}
 
 	public static Gem gemAt(float x, float y) {
@@ -66,6 +70,10 @@ public class Grid : MonoBehaviour {
 			res.AddRange (ver);
 		
 		return res;
+	}
+	public static void solveMatches(List<Gem> matches) {
+		foreach (Gem g in matches)
+			Destroy (g.gameObject);
 	}
 	void spawnAt(float x, float y) {
 		int index = Random.Range (0, gems.Length);

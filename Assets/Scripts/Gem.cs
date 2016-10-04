@@ -12,6 +12,9 @@ public class Gem : MonoBehaviour {
 		while (y > 0 && !Grid.gemAt (x, y - 1))
 			--y;
 		transform.position = new Vector2 (x, y);
+
+		//Solve matches
+		Grid.solveMatches(Grid.matchesAt(x,y));
 	}
 
 	public bool sameType(Gem other) {
