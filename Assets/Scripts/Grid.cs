@@ -9,10 +9,21 @@ public class Grid : MonoBehaviour {
 
 	//Available Gems
 	public GameObject[] gems;
-	private int counter = 0;
+	//Check for if there are no matches on the board at all
+	private static bool check = false;
+	private static bool ranOnce = false;
+	private static int ranOnceCounter = 0;
 	// Update is called once per frame
 	void Update () {
-		//Spawn Gem in empty spaces of top row
+
+		if (ranOnce == true) {
+			for (int i = 0; i < w; ++i) {
+				for (int j = 0; j < h; ++j) {
+					matchesAt (i, j);
+				}
+			}
+		}
+		//Spawn gems
 		for (int x = 0; x < w; ++x) {
 			if (!gemAt (x, h - 1))
 				spawnAt (x, h - 1);
@@ -20,6 +31,8 @@ public class Grid : MonoBehaviour {
 			if (gemAt (x, h - 2))
 				solveMatches (matchesAt (x, h - 1));
 		}
+		if(ranOnceCounter == 8)
+		ranOnce = true;
 	}
 
 	public static Gem gemAt(float x, float y) {
@@ -50,9 +63,10 @@ public class Grid : MonoBehaviour {
 
 		}
 		//if the count of gems next to each other are 3 or more, add to res
-		if (hor.Count >= 3)
+		if (hor.Count >= 3) {
 			res.AddRange (hor);
-
+			check = true;
+		}
 		//check vertically
 		List<Gem> ver = new List<Gem> ();
 		ver.Add (center);
@@ -66,8 +80,10 @@ public class Grid : MonoBehaviour {
 			if (Grid.gemAt (x, y - 2) && Grid.gemAt (x, y - 2).sameType (center))
 				ver.Add (Grid.gemAt (x, y - 2));
 		}
-		if (ver.Count >= 3)
+		if (ver.Count >= 3) {
 			res.AddRange (ver);
+			check = true;
+		}
 		
 		return res;
 	}

@@ -5,7 +5,6 @@ public class Select : MonoBehaviour {
 	//Current selection
 	float x = 0;
 	float y = 0;
-
 	//Visual Indicator
 	public Transform selectRect;
 	// Update is called once per frame
