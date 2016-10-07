@@ -9,8 +9,6 @@ public class Grid : MonoBehaviour {
 
 	//Available Gems
 	public GameObject[] gems;
-	//Check for if there are no matches on the board at all
-	public static List<Gem> listOfGems = new List<Gem> ();
 
 	// Update is called once per frame
 	void Update () {
@@ -19,7 +17,14 @@ public class Grid : MonoBehaviour {
 	}
 
 	public static void destroyBoard() {
+		List<Gem> listOfGems = new List<Gem> ();
 		Debug.Log ("Destroy");
+		for (int i = 0; i < w; ++i) {
+			for (int j = 0; j < h; ++j) {
+				listOfGems.Add (gemAt (i, j));
+			}
+		}
+
 		solveMatches (listOfGems);
 	}
 	public void spawnGems() {
@@ -62,7 +67,6 @@ public class Grid : MonoBehaviour {
 		//if the count of gems next to each other are 3 or more, add to res
 		if (hor.Count >= 3) {
 			res.AddRange (hor);
-			check = true;
 		}
 		//check vertically
 		List<Gem> ver = new List<Gem> ();
@@ -79,7 +83,6 @@ public class Grid : MonoBehaviour {
 		}
 		if (ver.Count >= 3) {
 			res.AddRange (ver);
-			check = true;
 		}
 
 		return res;
@@ -91,6 +94,5 @@ public class Grid : MonoBehaviour {
 	void spawnAt(float x, float y) {
 		int index = Random.Range (0, gems.Length);
 		Instantiate (gems [index], new Vector2 (x, y), Quaternion.identity);
-		listOfGems.Add (gemAt (x, y));
 	}
 }
