@@ -41,11 +41,17 @@ public class Select : MonoBehaviour {
 					if (validSwap (selected, Grid.gemAt (x - 1, y))) {
 						swapAndSolve (selected, Grid.gemAt (x - 1, y));
 						--x;
-					}
-				} else
-					--x;
+					} 
+				}	else
+						--x;
+				
+			} else if (Input.GetKeyDown (KeyCode.A)) {
+					if (Input.GetKey (KeyCode.LeftShift)) {
+						Grid.destroyBoard ();
+					} 
+				}
 			}
-		}
+
 		selectRect.position = new Vector2 (x, y);
 	}
 	void swap(Gem a, Gem b) {

@@ -10,19 +10,19 @@ public class Grid : MonoBehaviour {
 	//Available Gems
 	public GameObject[] gems;
 	//Check for if there are no matches on the board at all
-	private static bool check = false;
-	private static bool ranOnce = false;
-	private static int ranOnceCounter = 0;
+	public static List<Gem> listOfGems = new List<Gem> ();
+
 	// Update is called once per frame
 	void Update () {
 
-		if (ranOnce == true) {
-			for (int i = 0; i < w; ++i) {
-				for (int j = 0; j < h; ++j) {
-					matchesAt (i, j);
-				}
-			}
-		}
+		spawnGems ();
+	}
+
+	public static void destroyBoard() {
+		Debug.Log ("Destroy");
+		solveMatches (listOfGems);
+	}
+	public void spawnGems() {
 		//Spawn gems
 		for (int x = 0; x < w; ++x) {
 			if (!gemAt (x, h - 1))
@@ -31,10 +31,7 @@ public class Grid : MonoBehaviour {
 			if (gemAt (x, h - 2))
 				solveMatches (matchesAt (x, h - 1));
 		}
-		if(ranOnceCounter == 8)
-		ranOnce = true;
 	}
-
 	public static Gem gemAt(float x, float y) {
 		//Find Gem at Position (x,y)
 		Gem[] gems = GameObject.FindObjectsOfType<Gem>();
@@ -84,7 +81,7 @@ public class Grid : MonoBehaviour {
 			res.AddRange (ver);
 			check = true;
 		}
-		
+
 		return res;
 	}
 	public static void solveMatches(List<Gem> matches) {
@@ -94,5 +91,6 @@ public class Grid : MonoBehaviour {
 	void spawnAt(float x, float y) {
 		int index = Random.Range (0, gems.Length);
 		Instantiate (gems [index], new Vector2 (x, y), Quaternion.identity);
+		listOfGems.Add (gemAt (x, y));
 	}
 }
