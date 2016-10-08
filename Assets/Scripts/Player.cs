@@ -3,7 +3,9 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	public float speed = 30;
-	// Update is called once per frame
+
+	//Will store the last checkpoint
+	Transform check;
 	void Update () {
 		//Move Horizontal
 		float h = Input.GetAxisRaw ("Horizontal");
@@ -32,5 +34,23 @@ public class Player : MonoBehaviour {
 
 		// Was there something in-between, or did we hit ourself?
 		return (hit.collider.gameObject != gameObject);
+	}
+
+	void OnTriggerEnter2D(Collider2D co) {
+
+		//is it a checkpoint?
+		if (co.name == "checkpoint")
+			check = co.transform;
+	}
+
+	void OnCollisionEnter2D(Collision2D co) {
+		//have we collided with a V?
+		if (co.collider.name == "V") {
+			// Reset Rotation, Gravity, Velocity and go to last Checkpoint
+			transform.rotation = Quaternion.identity;
+			GetComponent<Rigidbody2D>().gravityScale = Mathf.Abs(GetComponent<Rigidbody2D>().gravityScale);
+			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			transform.position = check.position;
+		}
 	}
 }
