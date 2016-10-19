@@ -3,14 +3,22 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	public float speed = 30;
+	public bool moveRight;
+	public bool moveLeft;
 
 	//Will store the last checkpoint
 	Transform check;
 	void Update () {
 		//Move Horizontal
 		float h = Input.GetAxisRaw ("Horizontal");
-		GetComponent<Rigidbody2D> ().velocity = Vector2.right * h * speed;
 
+		if(moveRight) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.right * 1 * speed;
+		}
+
+		if(moveLeft) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.right * -1 * speed;
+		}
 		//Gravity Change
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded()) {
 			GetComponent<Rigidbody2D> ().gravityScale *= -1;
@@ -18,6 +26,24 @@ public class Player : MonoBehaviour {
 		}
 		// Animation
 		GetComponent<Animator>().SetInteger("DirX", (int)h);
+	}
+	public void MoveMeRight()
+	{
+		moveRight = true;
+	}
+
+	public void StopMeRight()
+	{
+		moveRight = false;
+	}
+	public void MoveMeLeft()
+	{
+		moveLeft = true;
+	}
+
+	public void StopMeLeft()
+	{
+		moveLeft = false;
 	}
 
 	public bool isGrounded() {
