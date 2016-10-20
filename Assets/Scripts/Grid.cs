@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class Grid : MonoBehaviour {
 
-	public static int w = 18;
-	public static int h = 8;
+	public static int w = 13;
+	public static int h = 10;
 
 	//Available Gems
 	public GameObject[] gems;
