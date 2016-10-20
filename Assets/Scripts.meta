@@ -1,15 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: bef483635f54c4df6930f735b8f41a70
-folderAsset: yes
-timeCreated: 1475541136
-=======
+
 guid: a8e01e6ee0ff8496ca7c5ce9b4515eb7
 folderAsset: yes
 timeCreated: 1475909690
->>>>>>> platformMini
 licenseType: Free
 DefaultImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:
