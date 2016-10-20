@@ -13,12 +13,13 @@ public class Player : MonoBehaviour {
 		float h = Input.GetAxisRaw ("Horizontal");
 
 		if(moveRight) {
-			GetComponent<Rigidbody2D> ().velocity = Vector2.right * 1 * speed;
+			GetComponent<Rigidbody2D> ().velocity = Vector2.right * 1 * Mathf.Clamp(speed, 0, 30);
 		}
 
 		if(moveLeft) {
-			GetComponent<Rigidbody2D> ().velocity = Vector2.right * -1 * speed;
+			GetComponent<Rigidbody2D> ().velocity = Vector2.right * -1 * Mathf.Clamp(speed, 0, 30);
 		}
+
 		//Gravity Change
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded()) {
 			GetComponent<Rigidbody2D> ().gravityScale *= -1;
