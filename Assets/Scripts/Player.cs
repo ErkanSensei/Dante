@@ -2,9 +2,10 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-	public float speed = 30;
+	public float speed = 10;
 	public bool moveRight;
 	public bool moveLeft;
+	public bool moveUp;
 
 	//Will store the last checkpoint
 	Transform check;
@@ -20,6 +21,10 @@ public class Player : MonoBehaviour {
 			GetComponent<Rigidbody2D> ().velocity = Vector2.right * -1 * Mathf.Clamp(speed, 0, 30);
 		}
 
+		if(moveUp) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.up * 1 * Mathf.Clamp(speed, 0, 30);
+		}
+
 		//Gravity Change
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded()) {
 			GetComponent<Rigidbody2D> ().gravityScale *= -1;
@@ -31,22 +36,46 @@ public class Player : MonoBehaviour {
 	public void MoveMeRight()
 	{
 		moveRight = true;
+		speed = 10;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.None;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
 
 	public void StopMeRight()
 	{
 		moveRight = false;
+		GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+		speed = 0;
 	}
 	public void MoveMeLeft()
 	{
 		moveLeft = true;
+		speed = 10;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.None;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
 
 	public void StopMeLeft()
 	{
 		moveLeft = false;
+		GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+		speed = 0;
+	}
+		
+	public void MoveMeUp()
+	{
+		moveUp = true;
+		speed = 10;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.None;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.FreezeRotation;
 	}
 
+	public void StopMeUp()
+	{
+		moveUp = false;
+		GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+		speed = 0;
+	}
 	public bool isGrounded() {
 		// Get Bounds and Cast Range (extents.y+20%)
 		Bounds bounds = GetComponent<Collider2D>().bounds;
