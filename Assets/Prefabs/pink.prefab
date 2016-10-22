@@ -23,7 +23,7 @@ GameObject:
   - 114: {fileID: 114000011520625196}
   m_Layer: 0
   m_Name: pink
-  m_TagString: Untagged
+  m_TagString: Puzzle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
