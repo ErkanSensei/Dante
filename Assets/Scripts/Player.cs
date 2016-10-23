@@ -3,9 +3,8 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 	public float speed = 10;
-	public bool moveRight;
-	public bool moveLeft;
-	public bool moveUp;
+	public bool moveRight, moveLeft, moveUp, moveDown;
+
 
 	//Will store the last checkpoint
 	Transform check;
@@ -24,7 +23,9 @@ public class Player : MonoBehaviour {
 		if(moveUp) {
 			GetComponent<Rigidbody2D> ().velocity = Vector2.up * 1 * Mathf.Clamp(speed, 0, 30);
 		}
-
+		if(moveDown) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.up * -1 * Mathf.Clamp(speed, 0, 30);
+		}
 		//Gravity Change
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded()) {
 			GetComponent<Rigidbody2D> ().gravityScale *= -1;
@@ -73,6 +74,20 @@ public class Player : MonoBehaviour {
 	public void StopMeUp()
 	{
 		moveUp = false;
+		GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+		speed = 0;
+	}
+	public void MoveMeDown()
+	{
+		moveDown = true;
+		speed = 10;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.None;
+		GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.FreezeRotation;
+	}
+
+	public void StopMeDown()
+	{
+		moveDown = false;
 		GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
 		speed = 0;
 	}
