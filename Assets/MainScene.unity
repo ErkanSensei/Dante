@@ -100,7 +100,7 @@ GameObject:
   - 4: {fileID: 10879001}
   - 212: {fileID: 10879002}
   - 61: {fileID: 10879003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!1 &12861121
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   - 4: {fileID: 17932059}
   - 212: {fileID: 17932061}
   - 61: {fileID: 17932060}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &17932061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -412,7 +412,7 @@ GameObject:
   - 4: {fileID: 45443951}
   - 212: {fileID: 45443953}
   - 61: {fileID: 45443952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &45443953
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -521,7 +521,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 47602787}
   - 212: {fileID: 47602788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   - 4: {fileID: 59339511}
   - 212: {fileID: 59339513}
   - 61: {fileID: 59339512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &59339513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ GameObject:
   - 4: {fileID: 71581365}
   - 212: {fileID: 71581367}
   - 61: {fileID: 71581366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &71581367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -772,7 +772,7 @@ GameObject:
   - 4: {fileID: 76072207}
   - 212: {fileID: 76072209}
   - 61: {fileID: 76072208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &76072209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -848,7 +848,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 85256182}
   - 212: {fileID: 85256183}
-  m_Layer: 0
+  - 61: {fileID: 85256184}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -901,6 +902,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &85256184
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85256181}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &88984617
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +926,7 @@ GameObject:
   - 4: {fileID: 88984618}
   - 212: {fileID: 88984620}
   - 61: {fileID: 88984619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +959,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &88984620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -987,7 +1002,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 94285150}
   - 212: {fileID: 94285149}
-  m_Layer: 0
+  - 61: {fileID: 94285151}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,6 +1056,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1564818577}
   m_RootOrder: 0
+--- !u!61 &94285151
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94285148}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &94380764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1079,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 94380765}
   - 212: {fileID: 94380766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1174,7 +1204,7 @@ GameObject:
   - 4: {fileID: 100179470}
   - 212: {fileID: 100179472}
   - 61: {fileID: 100179471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1207,7 +1237,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &100179472
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1251,7 +1281,7 @@ GameObject:
   - 4: {fileID: 100274537}
   - 212: {fileID: 100274539}
   - 61: {fileID: 100274538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1284,7 +1314,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &100274539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1372,6 +1402,15 @@ Prefab:
     - target: {fileID: 4000013841010034, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.15800126
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010870576978, guid: 2637d99d8d99d50479137b57d00e9a3e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013342188222, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012439067106, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
@@ -1587,7 +1626,7 @@ GameObject:
   - 4: {fileID: 142150535}
   - 212: {fileID: 142150537}
   - 61: {fileID: 142150536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1620,7 +1659,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &142150537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1664,7 +1703,7 @@ GameObject:
   - 4: {fileID: 148277264}
   - 212: {fileID: 148277266}
   - 61: {fileID: 148277265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1697,7 +1736,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &148277266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1740,7 +1779,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 157847264}
   - 212: {fileID: 157847265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1803,7 +1842,7 @@ GameObject:
   - 4: {fileID: 165880779}
   - 212: {fileID: 165880781}
   - 61: {fileID: 165880780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1836,7 +1875,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &165880781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2021,6 +2060,15 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.15800126
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010870576978, guid: 2637d99d8d99d50479137b57d00e9a3e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013342188222, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012439067106, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
@@ -2102,7 +2150,7 @@ GameObject:
   - 4: {fileID: 245266734}
   - 212: {fileID: 245266736}
   - 61: {fileID: 245266735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2183,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &245266736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2179,7 +2227,7 @@ GameObject:
   - 4: {fileID: 268737584}
   - 212: {fileID: 268737586}
   - 61: {fileID: 268737585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2212,7 +2260,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &268737586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2255,7 +2303,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 276238818}
   - 212: {fileID: 276238819}
-  m_Layer: 0
+  - 61: {fileID: 276238820}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2308,6 +2357,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &276238820
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 276238817}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &292858590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2320,7 +2383,7 @@ GameObject:
   - 61: {fileID: 292858593}
   - 50: {fileID: 292858592}
   - 114: {fileID: 292858591}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: racket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2398,7 +2461,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -4689447
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ef9f48911d51e6a45a413c0ec5d28894, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2471,6 +2534,15 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.15800126
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010870576978, guid: 2637d99d8d99d50479137b57d00e9a3e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013342188222, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012439067106, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
@@ -2490,7 +2562,7 @@ GameObject:
   - 4: {fileID: 296959770}
   - 212: {fileID: 296959769}
   - 61: {fileID: 296959768}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: border_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2539,7 +2611,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2638853e59a4cc24f9f32abcf2ffd50f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2566,7 +2638,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 301121329}
   - 212: {fileID: 301121330}
-  m_Layer: 0
+  - 61: {fileID: 301121331}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2619,6 +2692,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &301121331
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 301121328}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &310274161
 GameObject:
   m_ObjectHideFlags: 0
@@ -2753,7 +2840,7 @@ GameObject:
   - 4: {fileID: 334516998}
   - 212: {fileID: 334517000}
   - 61: {fileID: 334516999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2786,7 +2873,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &334517000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2830,7 +2917,7 @@ GameObject:
   - 4: {fileID: 335297489}
   - 212: {fileID: 335297488}
   - 61: {fileID: 335297487}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: border_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2879,7 +2966,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7cf5578557e422d48bd3a9d8792cf03d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2907,7 +2994,7 @@ GameObject:
   - 4: {fileID: 354574925}
   - 212: {fileID: 354574927}
   - 61: {fileID: 354574926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2940,7 +3027,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &354574927
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3046,7 +3133,7 @@ GameObject:
   - 4: {fileID: 370527046}
   - 212: {fileID: 370527048}
   - 61: {fileID: 370527047}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3079,7 +3166,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &370527048
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3123,7 +3210,7 @@ GameObject:
   - 4: {fileID: 375013666}
   - 212: {fileID: 375013668}
   - 61: {fileID: 375013667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3156,7 +3243,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &375013668
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3199,7 +3286,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 383166391}
   - 212: {fileID: 383166392}
-  m_Layer: 0
+  - 61: {fileID: 383166393}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3252,6 +3340,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &383166393
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 383166390}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &400628021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,7 +3364,7 @@ GameObject:
   - 4: {fileID: 400628022}
   - 212: {fileID: 400628024}
   - 61: {fileID: 400628023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3295,7 +3397,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &400628024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3358,7 +3460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1623741869}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -415}
@@ -3407,7 +3509,7 @@ GameObject:
   - 4: {fileID: 412751398}
   - 212: {fileID: 412751400}
   - 61: {fileID: 412751399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3440,7 +3542,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &412751400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3483,7 +3585,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 417107154}
   - 212: {fileID: 417107155}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3546,7 +3648,7 @@ GameObject:
   - 4: {fileID: 457099767}
   - 212: {fileID: 457099769}
   - 61: {fileID: 457099768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3579,7 +3681,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &457099769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3746,7 +3848,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 473936179}
   - 212: {fileID: 473936180}
-  m_Layer: 0
+  - 61: {fileID: 473936181}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3799,6 +3902,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &473936181
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473936178}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &490020208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,7 +4050,7 @@ GameObject:
   - 4: {fileID: 535088938}
   - 212: {fileID: 535088939}
   - 61: {fileID: 535088940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3999,7 +4116,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!1 &543064592
 GameObject:
   m_ObjectHideFlags: 0
@@ -4072,7 +4189,7 @@ GameObject:
   - 4: {fileID: 556225252}
   - 212: {fileID: 556225254}
   - 61: {fileID: 556225253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4105,7 +4222,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &556225254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4149,7 +4266,7 @@ GameObject:
   - 4: {fileID: 559032831}
   - 212: {fileID: 559032833}
   - 61: {fileID: 559032832}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4182,7 +4299,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &559032833
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4225,7 +4342,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 577569508}
   - 212: {fileID: 577569509}
-  m_Layer: 0
+  - 61: {fileID: 577569510}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4278,6 +4396,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &577569510
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 577569507}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &584470822
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,7 +4420,7 @@ GameObject:
   - 4: {fileID: 584470823}
   - 212: {fileID: 584470825}
   - 61: {fileID: 584470824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4321,7 +4453,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &584470825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4365,7 +4497,7 @@ GameObject:
   - 4: {fileID: 585540738}
   - 212: {fileID: 585540740}
   - 61: {fileID: 585540739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4398,7 +4530,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &585540740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4441,7 +4573,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 587549556}
   - 212: {fileID: 587549557}
-  m_Layer: 0
+  - 61: {fileID: 587549558}
+  m_Layer: 8
   m_Name: dungeon_tiles_76 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4494,6 +4627,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &587549558
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 587549555}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &590029105
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,7 +4650,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 590029106}
   - 212: {fileID: 590029107}
-  m_Layer: 0
+  - 61: {fileID: 590029108}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4556,6 +4704,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &590029108
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 590029105}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &590516322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,7 +4728,7 @@ GameObject:
   - 4: {fileID: 590516323}
   - 212: {fileID: 590516325}
   - 61: {fileID: 590516324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4599,7 +4761,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &590516325
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4642,7 +4804,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 596111987}
   - 212: {fileID: 596111988}
-  m_Layer: 0
+  - 61: {fileID: 596111989}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4695,6 +4858,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &596111989
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596111986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &604663501
 GameObject:
   m_ObjectHideFlags: 0
@@ -4788,7 +4965,7 @@ Transform:
   - {fileID: 1183505318}
   - {fileID: 1046831936}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &641657047
 GameObject:
   m_ObjectHideFlags: 0
@@ -4799,7 +4976,7 @@ GameObject:
   - 4: {fileID: 641657048}
   - 212: {fileID: 641657050}
   - 61: {fileID: 641657049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4832,7 +5009,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &641657050
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4875,7 +5052,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 653650264}
   - 212: {fileID: 653650265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4937,7 +5114,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 659468450}
   - 212: {fileID: 659468451}
-  m_Layer: 0
+  - 61: {fileID: 659468452}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4990,6 +5168,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &659468452
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659468449}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &664883376
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,7 +5192,7 @@ GameObject:
   - 4: {fileID: 664883377}
   - 212: {fileID: 664883379}
   - 61: {fileID: 664883378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5033,7 +5225,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &664883379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5077,7 +5269,7 @@ GameObject:
   - 4: {fileID: 686203383}
   - 212: {fileID: 686203385}
   - 61: {fileID: 686203384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5110,7 +5302,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &686203385
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5278,7 +5470,7 @@ GameObject:
   - 4: {fileID: 719818065}
   - 212: {fileID: 719818067}
   - 61: {fileID: 719818066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5311,7 +5503,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &719818067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5355,7 +5547,7 @@ GameObject:
   - 4: {fileID: 726362788}
   - 212: {fileID: 726362790}
   - 61: {fileID: 726362789}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5388,7 +5580,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &726362790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5432,7 +5624,7 @@ GameObject:
   - 4: {fileID: 738223939}
   - 212: {fileID: 738223941}
   - 61: {fileID: 738223940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5465,7 +5657,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &738223941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5508,7 +5700,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 747234390}
   - 212: {fileID: 747234391}
-  m_Layer: 0
+  - 61: {fileID: 747234392}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5561,6 +5754,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &747234392
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747234389}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &750197887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5571,7 +5778,7 @@ GameObject:
   - 4: {fileID: 750197888}
   - 212: {fileID: 750197890}
   - 61: {fileID: 750197889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5604,7 +5811,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &750197890
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5648,7 +5855,7 @@ GameObject:
   - 4: {fileID: 755075661}
   - 212: {fileID: 755075663}
   - 61: {fileID: 755075662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5681,7 +5888,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &755075663
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5725,7 +5932,7 @@ GameObject:
   - 4: {fileID: 757086653}
   - 212: {fileID: 757086655}
   - 61: {fileID: 757086654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5758,7 +5965,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &757086655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5802,7 +6009,7 @@ GameObject:
   - 4: {fileID: 767860668}
   - 212: {fileID: 767860670}
   - 61: {fileID: 767860669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5835,7 +6042,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &767860670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5879,7 +6086,7 @@ GameObject:
   - 4: {fileID: 771579219}
   - 212: {fileID: 771579221}
   - 61: {fileID: 771579220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5912,7 +6119,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &771579221
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5955,7 +6162,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 775145137}
   - 212: {fileID: 775145138}
-  m_Layer: 0
+  - 61: {fileID: 775145139}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6008,6 +6216,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &775145139
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 775145136}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &786056881
 GameObject:
   m_ObjectHideFlags: 0
@@ -6052,7 +6274,7 @@ GameObject:
   - 4: {fileID: 789865647}
   - 212: {fileID: 789865649}
   - 61: {fileID: 789865648}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6085,7 +6307,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &789865649
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6128,7 +6350,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 790695925}
   - 212: {fileID: 790695926}
-  m_Layer: 0
+  - 61: {fileID: 790695927}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6181,6 +6404,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &790695927
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 790695924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1001 &864745140
 Prefab:
   m_ObjectHideFlags: 0
@@ -6236,6 +6473,15 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.15800126
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010870576978, guid: 2637d99d8d99d50479137b57d00e9a3e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013342188222, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012439067106, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
@@ -6255,7 +6501,7 @@ GameObject:
   - 4: {fileID: 867691335}
   - 212: {fileID: 867691337}
   - 61: {fileID: 867691336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6288,7 +6534,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &867691337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6332,7 +6578,7 @@ GameObject:
   - 4: {fileID: 869915877}
   - 212: {fileID: 869915879}
   - 61: {fileID: 869915878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6365,7 +6611,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &869915879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6442,7 +6688,7 @@ GameObject:
   - 4: {fileID: 883230654}
   - 212: {fileID: 883230656}
   - 61: {fileID: 883230655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6475,7 +6721,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &883230656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6703,7 +6949,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 953233187}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6837,7 +7083,7 @@ GameObject:
   - 4: {fileID: 959941071}
   - 212: {fileID: 959941073}
   - 61: {fileID: 959941072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6870,7 +7116,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &959941073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6935,7 +7181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_Children: []
   m_Father: {fileID: 1623741869}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 400}
@@ -7072,7 +7318,7 @@ GameObject:
   - 4: {fileID: 969234018}
   - 212: {fileID: 969234020}
   - 61: {fileID: 969234019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7105,7 +7351,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &969234020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7149,7 +7395,7 @@ GameObject:
   - 4: {fileID: 972926934}
   - 212: {fileID: 972926936}
   - 61: {fileID: 972926935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7182,7 +7428,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &972926936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7225,7 +7471,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 973137620}
   - 212: {fileID: 973137621}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7349,7 +7595,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1004156528}
   - 212: {fileID: 1004156529}
-  m_Layer: 0
+  - 61: {fileID: 1004156530}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7402,6 +7649,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1004156530
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1004156527}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &1006993797
 GameObject:
   m_ObjectHideFlags: 0
@@ -7411,7 +7672,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1006993798}
   - 212: {fileID: 1006993799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7853,7 +8114,7 @@ GameObject:
   - 4: {fileID: 1029664089}
   - 212: {fileID: 1029664090}
   - 61: {fileID: 1029664091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7919,7 +8180,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1042565541
 GameObject:
   m_ObjectHideFlags: 0
@@ -7929,7 +8190,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1042565542}
   - 212: {fileID: 1042565543}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7992,7 +8253,7 @@ GameObject:
   - 4: {fileID: 1046660128}
   - 212: {fileID: 1046660130}
   - 61: {fileID: 1046660129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8025,7 +8286,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1046660130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8067,7 +8328,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1046831936}
-  m_Layer: 0
+  - 61: {fileID: 1046831937}
+  m_Layer: 8
   m_Name: 6Platforms (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8092,6 +8354,20 @@ Transform:
   - {fileID: 659468450}
   m_Father: {fileID: 641634475}
   m_RootOrder: 3
+--- !u!61 &1046831937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046831935}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1051890971
 GameObject:
   m_ObjectHideFlags: 0
@@ -8101,7 +8377,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1051890972}
   - 212: {fileID: 1051890973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8164,7 +8440,7 @@ GameObject:
   - 4: {fileID: 1055200757}
   - 212: {fileID: 1055200759}
   - 61: {fileID: 1055200758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8197,7 +8473,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1055200759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8399,7 +8675,7 @@ GameObject:
   - 4: {fileID: 1074158198}
   - 212: {fileID: 1074158200}
   - 61: {fileID: 1074158199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8432,7 +8708,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1074158200
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8478,7 +8754,7 @@ GameObject:
   - 61: {fileID: 1076239493}
   - 50: {fileID: 1076239492}
   - 114: {fileID: 1076239491}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8556,7 +8832,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -4689447
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c53df6bc40cef0348afb43f5381e663b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8583,7 +8859,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1082746753}
   - 212: {fileID: 1082746754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8646,7 +8922,7 @@ GameObject:
   - 4: {fileID: 1083137807}
   - 212: {fileID: 1083137809}
   - 61: {fileID: 1083137808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8679,7 +8955,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1083137809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8723,7 +8999,7 @@ GameObject:
   - 4: {fileID: 1084718799}
   - 212: {fileID: 1084718801}
   - 61: {fileID: 1084718800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8756,7 +9032,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1084718801
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8800,7 +9076,7 @@ GameObject:
   - 4: {fileID: 1111530621}
   - 212: {fileID: 1111530623}
   - 61: {fileID: 1111530622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8833,7 +9109,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1111530623
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8876,7 +9152,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1117106785}
   - 212: {fileID: 1117106786}
-  m_Layer: 0
+  - 61: {fileID: 1117106787}
+  m_Layer: 8
   m_Name: dungeon_tiles_76
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8929,6 +9206,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1117106787
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117106784}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1119558411
 GameObject:
   m_ObjectHideFlags: 0
@@ -8960,7 +9251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
   m_Children: []
   m_Father: {fileID: 1623741869}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 50}
@@ -9097,7 +9388,7 @@ GameObject:
   - 4: {fileID: 1120957830}
   - 212: {fileID: 1120957832}
   - 61: {fileID: 1120957831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9130,7 +9421,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1120957832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9173,7 +9464,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1125893733}
   - 212: {fileID: 1125893734}
-  m_Layer: 0
+  - 61: {fileID: 1125893735}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9226,6 +9518,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1125893735
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1125893732}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &1128242568
 GameObject:
   m_ObjectHideFlags: 0
@@ -9359,7 +9665,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1158097078}
   - 212: {fileID: 1158097079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9420,7 +9726,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1183505318}
-  m_Layer: 0
+  - 61: {fileID: 1183505319}
+  m_Layer: 8
   m_Name: 6Platforms (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9445,6 +9752,20 @@ Transform:
   - {fileID: 577569508}
   m_Father: {fileID: 641634475}
   m_RootOrder: 2
+--- !u!61 &1183505319
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1183505317}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1201483499
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,7 +9777,7 @@ GameObject:
   - 212: {fileID: 1201483503}
   - 58: {fileID: 1201483502}
   - 114: {fileID: 1201483501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9471,7 +9792,7 @@ Transform:
   m_GameObject: {fileID: 1201483499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.8321428, y: 4.305331, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2081946454}
@@ -9672,7 +9993,7 @@ GameObject:
   - 4: {fileID: 1270824427}
   - 212: {fileID: 1270824429}
   - 61: {fileID: 1270824428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9705,7 +10026,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1270824429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10031,7 +10352,7 @@ GameObject:
   - 4: {fileID: 1300161246}
   - 212: {fileID: 1300161248}
   - 61: {fileID: 1300161247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10064,7 +10385,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1300161248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10105,6 +10426,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1687437963}
     m_Modifications:
+    - target: {fileID: 114000011990935588, guid: be6d4326a0ea2e0418ec768b2334914a,
+        type: 2}
+      propertyPath: controls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011857266182, guid: be6d4326a0ea2e0418ec768b2334914a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 32.6
@@ -10149,6 +10475,40 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.14683598
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010952299662, guid: be6d4326a0ea2e0418ec768b2334914a,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013759189570, guid: be6d4326a0ea2e0418ec768b2334914a, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011990935588, guid: be6d4326a0ea2e0418ec768b2334914a,
+        type: 2}
+      propertyPath: controls.Array.data[0]
+      value: 
+      objectReference: {fileID: 1729610817}
+    - target: {fileID: 114000011990935588, guid: be6d4326a0ea2e0418ec768b2334914a,
+        type: 2}
+      propertyPath: controls.Array.data[1]
+      value: 
+      objectReference: {fileID: 1760651752}
+    - target: {fileID: 114000011990935588, guid: be6d4326a0ea2e0418ec768b2334914a,
+        type: 2}
+      propertyPath: controls.Array.data[2]
+      value: 
+      objectReference: {fileID: 964630875}
+    - target: {fileID: 114000011990935588, guid: be6d4326a0ea2e0418ec768b2334914a,
+        type: 2}
+      propertyPath: controls.Array.data[3]
+      value: 
+      objectReference: {fileID: 1119558411}
+    - target: {fileID: 114000011990935588, guid: be6d4326a0ea2e0418ec768b2334914a,
+        type: 2}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1201483499}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be6d4326a0ea2e0418ec768b2334914a, type: 2}
   m_IsPrefabParent: 0
@@ -10229,7 +10589,7 @@ GameObject:
   - 4: {fileID: 1343918048}
   - 212: {fileID: 1343918050}
   - 61: {fileID: 1343918049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10262,7 +10622,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1343918050
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10492,7 +10852,7 @@ GameObject:
   - 4: {fileID: 1360192801}
   - 212: {fileID: 1360192803}
   - 61: {fileID: 1360192802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10525,7 +10885,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1360192803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10568,7 +10928,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1363299211}
   - 212: {fileID: 1363299212}
-  m_Layer: 0
+  - 61: {fileID: 1363299213}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10621,6 +10982,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1363299213
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1363299210}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &1364146111
 GameObject:
   m_ObjectHideFlags: 0
@@ -10631,7 +11006,7 @@ GameObject:
   - 4: {fileID: 1364146112}
   - 212: {fileID: 1364146114}
   - 61: {fileID: 1364146113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10664,7 +11039,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1364146114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10708,7 +11083,7 @@ GameObject:
   - 4: {fileID: 1369251407}
   - 212: {fileID: 1369251409}
   - 61: {fileID: 1369251408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10741,7 +11116,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1369251409
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10785,7 +11160,7 @@ GameObject:
   - 4: {fileID: 1385118285}
   - 212: {fileID: 1385118287}
   - 61: {fileID: 1385118286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10818,7 +11193,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1385118287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10924,7 +11299,7 @@ GameObject:
   - 4: {fileID: 1393028222}
   - 212: {fileID: 1393028224}
   - 61: {fileID: 1393028223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10957,7 +11332,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1393028224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11001,7 +11376,7 @@ GameObject:
   - 4: {fileID: 1395224226}
   - 212: {fileID: 1395224228}
   - 61: {fileID: 1395224227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11034,7 +11409,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1395224228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11205,13 +11580,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1412347331}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 11, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -170.66667, y: -149.33334, z: -3840}
+  m_LocalScale: {x: 42.666668, y: 42.666668, z: 42.666668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1623741869}
+  m_RootOrder: 0
 --- !u!1 &1415308487
 GameObject:
   m_ObjectHideFlags: 0
@@ -11284,7 +11659,7 @@ GameObject:
   - 4: {fileID: 1435600159}
   - 212: {fileID: 1435600161}
   - 61: {fileID: 1435600160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11317,7 +11692,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1435600161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11361,7 +11736,7 @@ GameObject:
   - 4: {fileID: 1440273894}
   - 212: {fileID: 1440273896}
   - 61: {fileID: 1440273895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11394,7 +11769,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1440273896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11438,7 +11813,7 @@ GameObject:
   - 4: {fileID: 1474787846}
   - 212: {fileID: 1474787848}
   - 61: {fileID: 1474787847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11471,7 +11846,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1474787848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11515,7 +11890,7 @@ GameObject:
   - 4: {fileID: 1475480094}
   - 212: {fileID: 1475480096}
   - 61: {fileID: 1475480095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11548,7 +11923,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1475480096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11654,7 +12029,7 @@ GameObject:
   - 4: {fileID: 1487049215}
   - 212: {fileID: 1487049217}
   - 61: {fileID: 1487049216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11687,7 +12062,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1487049217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11838,6 +12213,15 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.15800126
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010870576978, guid: 2637d99d8d99d50479137b57d00e9a3e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013342188222, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012439067106, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
@@ -11876,7 +12260,7 @@ Transform:
   - {fileID: 882129679}
   - {fileID: 46282600}
   m_Father: {fileID: 1623741869}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &1520969376
 GameObject:
   m_ObjectHideFlags: 0
@@ -11924,7 +12308,7 @@ GameObject:
   - 4: {fileID: 1544359775}
   - 212: {fileID: 1544359777}
   - 61: {fileID: 1544359776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11957,7 +12341,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1544359777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12001,7 +12385,7 @@ GameObject:
   - 4: {fileID: 1544679525}
   - 212: {fileID: 1544679527}
   - 61: {fileID: 1544679526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12034,7 +12418,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1544679527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12226,7 +12610,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1558224304}
   - 212: {fileID: 1558224305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12289,7 +12673,7 @@ GameObject:
   - 4: {fileID: 1559101455}
   - 212: {fileID: 1559101457}
   - 61: {fileID: 1559101456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12322,7 +12706,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1559101457
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12366,7 +12750,7 @@ GameObject:
   - 4: {fileID: 1560398147}
   - 212: {fileID: 1560398149}
   - 61: {fileID: 1560398148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12399,7 +12783,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1560398149
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12476,7 +12860,7 @@ GameObject:
   - 4: {fileID: 1576809325}
   - 212: {fileID: 1576809327}
   - 61: {fileID: 1576809326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12509,7 +12893,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1576809327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12587,7 +12971,7 @@ GameObject:
   - 4: {fileID: 1588323776}
   - 212: {fileID: 1588323778}
   - 61: {fileID: 1588323777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12620,7 +13004,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1588323778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12664,7 +13048,7 @@ GameObject:
   - 4: {fileID: 1593234817}
   - 212: {fileID: 1593234819}
   - 61: {fileID: 1593234818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12697,7 +13081,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1593234819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12803,7 +13187,7 @@ GameObject:
   - 4: {fileID: 1608147247}
   - 212: {fileID: 1608147249}
   - 61: {fileID: 1608147248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12836,7 +13220,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1608147249
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12880,7 +13264,7 @@ GameObject:
   - 4: {fileID: 1610917223}
   - 212: {fileID: 1610917225}
   - 61: {fileID: 1610917224}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12913,7 +13297,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1610917225
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13032,6 +13416,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1412347337}
   - {fileID: 1687437963}
   - {fileID: 403898161}
   - {fileID: 1729610818}
@@ -13039,6 +13424,7 @@ RectTransform:
   - {fileID: 964630876}
   - {fileID: 1119558412}
   - {fileID: 1512863627}
+  - {fileID: 2098490382}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -13056,7 +13442,7 @@ GameObject:
   - 4: {fileID: 1635643066}
   - 212: {fileID: 1635643068}
   - 61: {fileID: 1635643067}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13089,7 +13475,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1635643068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13194,7 +13580,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1642847903}
   - 212: {fileID: 1642847904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13319,7 +13705,7 @@ GameObject:
   - 4: {fileID: 1659955262}
   - 212: {fileID: 1659955264}
   - 61: {fileID: 1659955263}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13352,7 +13738,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1659955264
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13600,7 +13986,7 @@ Transform:
   m_Children:
   - {fileID: 1009034156}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1686348687
 GameObject:
   m_ObjectHideFlags: 0
@@ -13610,7 +13996,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1686348688}
   - 212: {fileID: 1686348689}
-  m_Layer: 0
+  - 61: {fileID: 1686348690}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13663,6 +14050,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1686348690
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686348687}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &1687437962
 GameObject:
   m_ObjectHideFlags: 0
@@ -13671,7 +14072,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1687437963}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArkanoidLevel1
   m_TagString: Puzzle
   m_Icon: {fileID: 0}
@@ -13702,7 +14103,7 @@ Transform:
   - {fileID: 335297489}
   - {fileID: 2086428677}
   m_Father: {fileID: 1623741869}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1700394721
 GameObject:
   m_ObjectHideFlags: 0
@@ -13712,7 +14113,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1700394722}
   - 212: {fileID: 1700394723}
-  m_Layer: 0
+  - 61: {fileID: 1700394724}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13765,6 +14167,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1700394724
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1700394721}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &1729610817
 GameObject:
   m_ObjectHideFlags: 0
@@ -13796,7 +14212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1623741869}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -200, y: 250}
@@ -13978,6 +14394,15 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.15800126
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010870576978, guid: 2637d99d8d99d50479137b57d00e9a3e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013342188222, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012439067106, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2637d99d8d99d50479137b57d00e9a3e, type: 2}
@@ -13997,7 +14422,7 @@ GameObject:
   - 4: {fileID: 1733074315}
   - 212: {fileID: 1733074317}
   - 61: {fileID: 1733074316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14030,7 +14455,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1733074317
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14074,7 +14499,7 @@ GameObject:
   - 4: {fileID: 1734625766}
   - 212: {fileID: 1734625768}
   - 61: {fileID: 1734625767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14107,7 +14532,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1734625768
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14150,7 +14575,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1737944167}
   - 212: {fileID: 1737944168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14275,7 +14700,7 @@ GameObject:
   - 4: {fileID: 1747761779}
   - 212: {fileID: 1747761780}
   - 61: {fileID: 1747761781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14341,7 +14766,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1750940837
 GameObject:
   m_ObjectHideFlags: 0
@@ -14351,7 +14776,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1750940838}
   - 212: {fileID: 1750940839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14414,7 +14839,7 @@ GameObject:
   - 4: {fileID: 1755807917}
   - 212: {fileID: 1755807919}
   - 61: {fileID: 1755807918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14447,7 +14872,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1755807919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14574,7 +14999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1623741869}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 200, y: 250}
@@ -14773,7 +15198,7 @@ GameObject:
   - 4: {fileID: 1765314865}
   - 212: {fileID: 1765314867}
   - 61: {fileID: 1765314866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14806,7 +15231,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1765314867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14850,7 +15275,7 @@ GameObject:
   - 4: {fileID: 1767138837}
   - 212: {fileID: 1767138839}
   - 61: {fileID: 1767138838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14883,7 +15308,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1767138839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14927,7 +15352,7 @@ GameObject:
   - 4: {fileID: 1774894105}
   - 212: {fileID: 1774894107}
   - 61: {fileID: 1774894106}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14960,7 +15385,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1774894107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15004,7 +15429,7 @@ GameObject:
   - 4: {fileID: 1807985648}
   - 212: {fileID: 1807985650}
   - 61: {fileID: 1807985649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15037,7 +15462,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1807985650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15081,7 +15506,7 @@ GameObject:
   - 4: {fileID: 1810122801}
   - 212: {fileID: 1810122803}
   - 61: {fileID: 1810122802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15114,7 +15539,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1810122803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15158,7 +15583,7 @@ GameObject:
   - 4: {fileID: 1816617881}
   - 212: {fileID: 1816617883}
   - 61: {fileID: 1816617882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15191,7 +15616,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1816617883
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15235,7 +15660,7 @@ GameObject:
   - 4: {fileID: 1816628877}
   - 212: {fileID: 1816628879}
   - 61: {fileID: 1816628878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15268,7 +15693,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1816628879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15312,7 +15737,7 @@ GameObject:
   - 4: {fileID: 1849636384}
   - 212: {fileID: 1849636386}
   - 61: {fileID: 1849636385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15345,7 +15770,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1849636386
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15389,7 +15814,7 @@ GameObject:
   - 4: {fileID: 1919512597}
   - 212: {fileID: 1919512599}
   - 61: {fileID: 1919512598}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15422,7 +15847,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1919512599
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15652,7 +16077,7 @@ GameObject:
   - 4: {fileID: 1950445051}
   - 212: {fileID: 1950445053}
   - 61: {fileID: 1950445052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15685,7 +16110,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1950445053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15729,7 +16154,7 @@ GameObject:
   - 4: {fileID: 1954643787}
   - 212: {fileID: 1954643789}
   - 61: {fileID: 1954643788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15762,7 +16187,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1954643789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15806,7 +16231,7 @@ GameObject:
   - 4: {fileID: 1965298779}
   - 212: {fileID: 1965298781}
   - 61: {fileID: 1965298780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15839,7 +16264,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1965298781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15881,7 +16306,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1971476796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15928,7 +16353,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1973308957}
   - 212: {fileID: 1973308958}
-  m_Layer: 0
+  - 61: {fileID: 1973308959}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15981,6 +16407,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1973308959
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973308956}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &1984884249
 GameObject:
   m_ObjectHideFlags: 0
@@ -16052,7 +16492,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1985008692}
   - 212: {fileID: 1985008693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16177,7 +16617,7 @@ GameObject:
   - 4: {fileID: 1998654936}
   - 212: {fileID: 1998654938}
   - 61: {fileID: 1998654937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16210,7 +16650,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &1998654938
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16252,7 +16692,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2004951680}
-  m_Layer: 0
+  - 61: {fileID: 2004951681}
+  m_Layer: 8
   m_Name: 6Platforms (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16277,6 +16718,20 @@ Transform:
   - {fileID: 747234390}
   m_Father: {fileID: 641634475}
   m_RootOrder: 1
+--- !u!61 &2004951681
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004951679}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &2009218024
 GameObject:
   m_ObjectHideFlags: 0
@@ -16349,7 +16804,7 @@ GameObject:
   - 4: {fileID: 2046272081}
   - 212: {fileID: 2046272083}
   - 61: {fileID: 2046272082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16382,7 +16837,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &2046272083
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16550,7 +17005,7 @@ GameObject:
   - 4: {fileID: 2058433182}
   - 212: {fileID: 2058433184}
   - 61: {fileID: 2058433183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16583,7 +17038,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &2058433184
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16689,7 +17144,7 @@ GameObject:
   - 4: {fileID: 2064421371}
   - 212: {fileID: 2064421373}
   - 61: {fileID: 2064421372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16722,7 +17177,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &2064421373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16826,7 +17281,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2077613672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16848,7 +17303,7 @@ Transform:
   - {fileID: 1971476796}
   - {fileID: 2081946454}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!1 &2081219543
 GameObject:
   m_ObjectHideFlags: 0
@@ -16859,7 +17314,7 @@ GameObject:
   - 4: {fileID: 2081219544}
   - 212: {fileID: 2081219546}
   - 61: {fileID: 2081219545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16892,7 +17347,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &2081219546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16934,7 +17389,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2081946454}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16965,7 +17420,7 @@ GameObject:
   - 4: {fileID: 2086428677}
   - 212: {fileID: 2086428676}
   - 61: {fileID: 2086428675}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: border_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17014,7 +17469,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3e1a488dcac4fc24e87aee1c822df50d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17089,13 +17544,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098490379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 11, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 170.66667, y: -149.33334, z: -3840}
+  m_LocalScale: {x: 42.666668, y: 42.666668, z: 42.666668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1623741869}
+  m_RootOrder: 8
 --- !u!114 &2098490383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17134,7 +17589,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2100853002}
   - 212: {fileID: 2100853003}
-  m_Layer: 0
+  - 61: {fileID: 2100853004}
+  m_Layer: 8
   m_Name: grassBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17187,6 +17643,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &2100853004
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100853001}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
 --- !u!1 &2123431269
 GameObject:
   m_ObjectHideFlags: 0
@@ -17196,7 +17666,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2123431270}
   - 212: {fileID: 2123431271}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17259,7 +17729,7 @@ GameObject:
   - 4: {fileID: 2124447909}
   - 212: {fileID: 2124447911}
   - 61: {fileID: 2124447910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17292,7 +17762,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &2124447911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17336,7 +17806,7 @@ GameObject:
   - 4: {fileID: 2127744536}
   - 212: {fileID: 2127744538}
   - 61: {fileID: 2127744537}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17369,7 +17839,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &2127744538
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17413,7 +17883,7 @@ GameObject:
   - 4: {fileID: 2132311006}
   - 212: {fileID: 2132311008}
   - 61: {fileID: 2132311007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wallTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17446,7 +17916,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
 --- !u!212 &2132311008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17551,7 +18021,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2141806114}
   - 212: {fileID: 2141806115}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dungeon_tiles_10 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

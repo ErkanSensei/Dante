@@ -2,8 +2,20 @@
 using System.Collections;
 
 public class Block : MonoBehaviour {
+	public GameObject door;
+	public GameObject[] controls;
+	public GameObject[] gos;
 
 	void OnCollisionEnter2D(Collision2D collisionInfo){
+		gos = GameObject.FindGameObjectsWithTag ("Puzzle");
+		foreach (GameObject go in gos)  {
+			go.SetActive(false);
+			Destroy (go);
+		}
+		foreach (GameObject control in controls)  {
+			control.SetActive(true);
+		}
 		Destroy (gameObject);
+		Destroy (door);
 	}
 }
