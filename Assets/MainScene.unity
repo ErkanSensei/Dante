@@ -3686,7 +3686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &427829266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10001,7 +10001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2d3c7763526450aa70d528a7e8c309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BJewel: {fileID: 1687437962}
+  BJewel: {fileID: 427829265}
   player: {fileID: 1009034159}
   gos: []
   controls: []
