@@ -58,7 +58,7 @@ public class Racket : MonoBehaviour
 			{
 				touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 				newGOCenter = touchPosition - offset;
-				gameObjectTodrag.transform.position = new Vector3(newGOCenter.x,-100, GOcenter.z);
+				gameObjectTodrag.transform.position = new Vector3(Mathf.Clamp(newGOCenter.x, 0, 12), Camera.main.gameObject.transform.position.y-14.8f, GOcenter.z);
 			}
 		}
 
@@ -98,7 +98,7 @@ public class Racket : MonoBehaviour
 				{
 					touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 					newGOCenter = touchPosition - offset;
-					gameObjectTodrag.transform.position = new Vector3(newGOCenter.x, -100, GOcenter.z);
+					gameObjectTodrag.transform.position = new Vector3(Mathf.Clamp(newGOCenter.x, 0, 12), Camera.main.gameObject.transform.position.y-14.8f, GOcenter.z);
 				}
 				break;
 
