@@ -1,26 +1,111 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Racket : MonoBehaviour {
+public class Racket : MonoBehaviour
+{
+	//This code is for 2D click/drag gameobject
+	//Please make sure to change Camera Projection to Orthographic
+	//Add Collider (not 2DCollider) to gameObject  
 
-	public float speed = 150;  //Movement speed of racket.
+	public GameObject gameObjectTodrag; //refer to GO that being dragged
+
+	public Vector3 GOcenter; //gameobjectcenter
+	public Vector3 touchPosition; //touch or click position
+	public Vector3 offset;//vector between touchpoint/mouseclick to object center
+	public Vector3 newGOCenter; //new center of gameObject
+
+	RaycastHit hit; //store hit object information
+
+	public bool draggingMode = false;
+
 
 	// Use this for initialization
-	void FixedUpdate(){
+	void Start()
+	{
 
-		// Moves object according to finger movement on the screen
-		if (Input.touchCount > 0 &&
-		     Input.GetTouch (0).phase == TouchPhase.Moved) {
+	}
 
-			// Get movement of the finger since last frame
-			Vector2 touchDeltaPosition = Input.GetTouch (0).deltaPosition;
+	// Update is called once per frame
+	void Update()
+	{
 
-			// Move object across XY plane
-			transform.Translate (-touchDeltaPosition.x * speed, 
-				-touchDeltaPosition.y * speed, 0);
+		//***********************
+		// *** CLICK TO DRAG ****
+		//***********************
+		draggingMode = true;
+		#if UNITY_EDITOR
+		//first frame when user click left mouse
+		if (Input.GetMouseButtonDown(0))
+		{
+			//convert mouse click position to a ray
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+			//if ray hit a Collider ( not 2DCollider)
+			if (Physics.Raycast(ray, out hit))
+			{
+				gameObjectTodrag = hit.collider.gameObject;
+				GOcenter = gameObjectTodrag.transform.position;
+				touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+				offset = touchPosition - GOcenter;
+				draggingMode = true;
+			}
+		}
+
+		//every frame when user hold on left mouse
+		if (Input.GetMouseButton(0))
+		{
+			if (draggingMode)
+			{
+				touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+				newGOCenter = touchPosition - offset;
+				gameObjectTodrag.transform.position = new Vector3(newGOCenter.x,-100, GOcenter.z);
+			}
+		}
+
+		//when mouse is released
+		if (Input.GetMouseButtonUp(0))
+		{
+			draggingMode = false;
+		}
+		#endif
+
+		//***********************
+		// *** TOUCH TO DRAG ****
+		//***********************
+		foreach (Touch touch in Input.touches)
+		{
+			switch (touch.phase)
+			{
+			//When just touch
+			case TouchPhase.Began:
+				//convert mouse click position to a ray
+				Ray ray = Camera.main.ScreenPointToRay(touch.position);
+
+				//if ray hit a Collider ( not 2DCollider)
+				// if (Physics.Raycast(ray, out hit))
+				if (Physics.SphereCast(ray, 0.3f, out hit))
+				{
+					gameObjectTodrag = hit.collider.gameObject;
+					GOcenter = gameObjectTodrag.transform.position;
+					touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+					offset = touchPosition - GOcenter;
+					draggingMode = true;
+				}
+				break;
+
+			case TouchPhase.Moved:
+				if (draggingMode)
+				{
+					touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+					newGOCenter = touchPosition - offset;
+					gameObjectTodrag.transform.position = new Vector3(newGOCenter.x, -100, GOcenter.z);
+				}
+				break;
+
+			case TouchPhase.Ended:
+				draggingMode = false;
+				break;
+			}
 		}
 	}
-		//float yInput = Input.GetAxisRaw ("Horizontal");	// Horizontal input.
-		//GetComponent<Rigidbody2D>().velocity = Vector2.right * pointer_y * speed
 }
-
