@@ -7,7 +7,7 @@ public class Hexagon : MonoBehaviour {
 	public double currentRotation;
 	public double[] winningRotations;
 	public double winningRotation;
-	public bool rotateOrNo = false;
+	public bool rotateOrNo = true;
 	
 	// Update is called once per frame
 	void Update () {
@@ -15,7 +15,6 @@ public class Hexagon : MonoBehaviour {
 	}
 
 	public void rotateThis(GameObject hexagon) {
-		Debug.Log (Mathf.Floor(hexagon.transform.localEulerAngles.z));
 		hexagon.transform.Rotate (0, 0, 60);
 	}
 
@@ -27,5 +26,15 @@ public class Hexagon : MonoBehaviour {
 				currentRotations [i] = false;
 			}
 		}
+		for (int j = 0; j < rotations.Length; j++) {
+			if (currentRotations [j] == false) {
+				rotateOrNo = false;
+			}
+		}
+
+		if (rotateOrNo == true) {
+			Debug.Log ("Winner!");
+		}
+		rotateOrNo = true;
 	}
 }

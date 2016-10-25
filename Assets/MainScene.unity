@@ -3722,7 +3722,7 @@ MonoBehaviour:
   currentRotation: 0
   winningRotations:
   - 60
-  - 180
+  - 240
   winningRotation: 0
   rotateOrNo: 0
 --- !u!1 &457099766
