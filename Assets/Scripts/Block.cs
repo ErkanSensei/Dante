@@ -15,7 +15,7 @@ public class Block : MonoBehaviour {
 		foreach (GameObject control in controls)  {
 			control.SetActive(true);
 		}
-		Destroy (gameObject);
+		gameObject.SetActive (false);
 		Destroy (door);
 	}
 }

@@ -6,6 +6,7 @@ public class TriggerBejeweled : MonoBehaviour {
 	public Player player;
 	public GameObject[] gos;
 	public GameObject[] controls;
+	public GameObject[] puzzles;
 
 	bool entered = false;
 
@@ -21,7 +22,6 @@ public class TriggerBejeweled : MonoBehaviour {
 			//loop through the returned array of game objects and set each to active false
 			foreach (GameObject go in gos)  {
 				go.SetActive(false);
-				Destroy (go);
 			}
 			foreach (GameObject control in controls)  {
 				player.StopMeUp ();
@@ -30,6 +30,7 @@ public class TriggerBejeweled : MonoBehaviour {
 				player.StopMeRight ();
 				control.SetActive(false);
 			}
+			BJewel = puzzles [Mathf.FloorToInt(Random.Range (0, puzzles.Length))];
 			BJewel.SetActive (true);
 			entered = true;
 		}
