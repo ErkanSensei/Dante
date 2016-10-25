@@ -8,7 +8,7 @@ public class win : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		won =2;
-		WinText = GetComponent<Text> ();
+	//	WinText = gameObject.GetComponent<Text> ();
 
 	}
 	

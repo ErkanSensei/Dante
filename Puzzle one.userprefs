@@ -4,10 +4,12 @@
     <Files>
       <File FileName="Assets\GuessWord.cs" Line="1" Column="1" />
       <File FileName="Assets\score.cs" Line="1" Column="1" />
-      <File FileName="Assets\destroybomb.cs" Line="98" Column="3" />
+      <File FileName="Assets\destroybomb.cs" Line="105" Column="4" />
       <File FileName="Assets\trajectorypath.cs" Line="11" Column="3" />
       <File FileName="Assets\bounce.cs" Line="1" Column="1" />
       <File FileName="Assets\PhysicsControls.cs" Line="24" Column="29" />
+      <File FileName="Assets\countdown.cs" Line="35" Column="22" />
+      <File FileName="Assets\win.cs" Line="31" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

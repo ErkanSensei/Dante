@@ -4,13 +4,13 @@ using UnityEngine.UI;
 
 public class countdown : MonoBehaviour {
 	public Text CountText;
-	public float timeleft;
+	private float timeleft = 7.0f;
 	 win WIN; 
 	// Use this for initialization
 	void Start () {
-		WIN = gameObject.GetComponent<win>(); 
-		CountText = GetComponent<Text> ();
-		timeleft= 15.0f;
+		WIN = GameObject.Find("WinText").GetComponent<win>(); 
+		CountText = GameObject.Find("Count Text").GetComponent<Text> ();
+		//timeleft= 10.0f;
 
 	}
 	
@@ -24,7 +24,7 @@ public class countdown : MonoBehaviour {
 		{
 			timeleft = 0;
 			Debug.Log ("time is up");
-			WIN.Lose (false);
+			WIN.WinText.text = ("Game Over");
 			GameOver();
 
 		}

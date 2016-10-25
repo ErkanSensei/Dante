@@ -3,8 +3,22 @@ using System.Collections;
 
 public class trajectorypath : MonoBehaviour {
 	
-	public float fallSpeed = 8.0f;
-	public float spinSpeed = 250.0f;
+	public float fallSpeed = Random.Range (10, 80);
+	private float spinSpeed = 250.0f;
+	float x;
+	float y;
+	float z;
+	Vector3 pos;
+
+	void start(){
+		x = Random.Range(-25, 100);
+		y = 5;
+		z = Random.Range(-25, 26);
+		pos = new Vector3(x, y, z);
+		transform.position = pos;
+		fallSpeed = Random.Range (1, 8);
+	}
+
 
 	void Update() {
 
