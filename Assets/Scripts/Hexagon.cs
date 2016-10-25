@@ -8,6 +8,7 @@ public class Hexagon : MonoBehaviour {
 	public bool rotateOrNo = true;
 	public GameObject[] gos;
 	public GameObject[] controls;
+	public GameObject door;
 	
 	// Update is called once per frame
 	void Update () {
@@ -43,6 +44,7 @@ public class Hexagon : MonoBehaviour {
 			foreach (GameObject control in controls)  {
 				control.SetActive(true);
 			}
+			Destroy (door);
 
 		}
 		rotateOrNo = true;
