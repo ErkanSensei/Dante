@@ -4,8 +4,11 @@ using System.Collections;
 public class Ball : MonoBehaviour {
 
 	public float speed = 100.0f;  //speed of ball
+	public Vector3 initialPosition;
+	public Quaternion initialRotation;
 	// Use this for initialization
 	void Start () {
+		initialPosition = transform.position;
 		GetComponent<Rigidbody2D> ().velocity = Vector2.up * speed;  //upwards movement
 	}
 
@@ -19,5 +22,9 @@ public class Ball : MonoBehaviour {
 
 	float hitFactor(Vector2 ballPos, Vector2 racketPos, float racketWidth){
 		return (ballPos.x - racketPos.x) / racketWidth;	//Ball position in relation to racket.
+	}
+
+	public Vector3 getIP() {
+		return initialPosition;
 	}
 }
