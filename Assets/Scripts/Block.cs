@@ -5,6 +5,7 @@ public class Block : MonoBehaviour {
 	public GameObject door;
 	public GameObject[] controls;
 	public GameObject[] gos;
+	private SpriteRenderer sprite;
 
 	void OnCollisionEnter2D(Collision2D collisionInfo){
 		gos = GameObject.FindGameObjectsWithTag ("Puzzle");
@@ -16,6 +17,7 @@ public class Block : MonoBehaviour {
 			control.SetActive(true);
 		}
 		gameObject.SetActive (false);
-		Destroy (door);
+		sprite = door.GetComponent<SpriteRenderer> ();
+		sprite.sortingOrder = -1;
 	}
 }
