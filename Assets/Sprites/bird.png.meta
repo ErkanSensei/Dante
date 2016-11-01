@@ -1,20 +1,17 @@
 fileFormatVersion: 2
-guid: 6c49f21c126fe4f4383b8e69cdda7f79
-timeCreated: 1475595696
+guid: e07b7ff8ca535a545822b1fc5d17c52a
+timeCreated: 1478019675
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: placeHolderParallax_0
-    21300002: placeHolderParallax_1
-    21300004: placeHolderParallax_2
-    21300006: placeHolderParallax_3
-    21300008: placeHolderParallax_4
-    21300010: placeHolderParallax_5
-    21300012: placeHolderParallax_6
+    21300000: bird_0
+    21300002: bird_1
+    21300004: bird_2
+    21300006: bird_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -36,7 +33,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -51,100 +48,66 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: placeHolderParallax_0
+      name: bird_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 421
-        width: 512
-        height: 91
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: placeHolderParallax_1
+      name: bird_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 236
-        width: 512
-        height: 184
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: placeHolderParallax_2
+      name: bird_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 175
-        width: 512
-        height: 58
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: placeHolderParallax_3
+      name: bird_3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 113
-        width: 24
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: placeHolderParallax_4
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 113
-        width: 24
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: placeHolderParallax_5
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 113
-        width: 21
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: placeHolderParallax_6
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 113
-        width: 19
-        height: 59
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
