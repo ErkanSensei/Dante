@@ -4,27 +4,53 @@ using System.Collections;
 public class Player : MonoBehaviour {
 	public float speed = 10;
 	public bool moveRight, moveLeft, moveUp, moveDown;
-
+	public AudioClip walkSound;
+	public int counter;
+	private AudioSource source;
+	private float volLowRange = .2f;
+	private float volHighRange = .2f;
+	private float vol;
 
 	//Will store the last checkpoint
 	Transform check;
+
+	void Awake() {
+		source = GetComponent<AudioSource>();
+		counter = 0;
+	}
 	void Update () {
 		//Move Horizontal
 		float h = Input.GetAxisRaw ("Horizontal");
-
+		counter++;
 		if(moveRight) {
 			GetComponent<Rigidbody2D> ().velocity = Vector2.right * 1 * Mathf.Clamp(speed, 0, 30);
+			vol = Random.Range (volLowRange, volHighRange);
+			if (counter % 10 == 0) {
+				source.PlayOneShot (walkSound, vol);
+			}
 		}
 
 		if(moveLeft) {
 			GetComponent<Rigidbody2D> ().velocity = Vector2.right * -1 * Mathf.Clamp(speed, 0, 30);
+			vol = Random.Range (volLowRange, volHighRange);
+			if (counter % 10 == 0) {
+				source.PlayOneShot (walkSound, vol);
+			}
 		}
 
 		if(moveUp) {
 			GetComponent<Rigidbody2D> ().velocity = Vector2.up * 1 * Mathf.Clamp(speed, 0, 30);
+			vol = Random.Range (volLowRange, volHighRange);
+			if (counter % 10 == 0) {
+				source.PlayOneShot (walkSound, vol);
+			}
 		}
 		if(moveDown) {
 			GetComponent<Rigidbody2D> ().velocity = Vector2.up * -1 * Mathf.Clamp(speed, 0, 30);
+			vol = Random.Range (volLowRange, volHighRange);
+			if (counter % 10 == 0) {
+				source.PlayOneShot (walkSound, vol);
+			}
 		}
 		//Gravity Change
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded()) {
