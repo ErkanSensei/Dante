@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TriggerBejeweled : MonoBehaviour {
 	public GameObject BJewel;
+	public GameObject text;
 	public Player player;
 	public GameObject[] gos;
 	public GameObject[] controls;
@@ -32,6 +33,7 @@ public class TriggerBejeweled : MonoBehaviour {
 			}
 			BJewel = puzzles [Mathf.FloorToInt(Random.Range (0, puzzles.Length))];
 			BJewel.SetActive (true);
+			text.SetActive (true);
 			entered = true;
 		}
 

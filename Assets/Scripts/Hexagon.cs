@@ -34,7 +34,6 @@ public class Hexagon : MonoBehaviour {
 		}
 
 		if (rotateOrNo == true) {
-			Debug.Log ("Winner!");
 			gos = GameObject.FindGameObjectsWithTag("Puzzle");
 			//loop through the returned array of game objects and set each to active false
 			foreach (GameObject go in gos)  {

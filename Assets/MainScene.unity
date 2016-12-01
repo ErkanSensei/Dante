@@ -2989,7 +2989,7 @@ MonoBehaviour:
   - {fileID: 1760651752}
   - {fileID: 964630875}
   - {fileID: 1119558411}
-  door: {fileID: 0}
+  door: {fileID: 1201483499}
 --- !u!1 &46282599
 GameObject:
   m_ObjectHideFlags: 0
@@ -6422,7 +6422,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 105876448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 10, z: 0}
+  m_LocalPosition: {x: 5.19, y: 10.76, z: 0}
   m_LocalScale: {x: 0.28846094, y: 0.28846094, z: 0.5769219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -6454,6 +6454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 105876448}
+  text: {fileID: 0}
   player: {fileID: 1009034159}
   gos: []
   controls:
@@ -11950,7 +11951,7 @@ MonoBehaviour:
   - {fileID: 1760651752}
   - {fileID: 964630875}
   - {fileID: 1119558411}
-  door: {fileID: 0}
+  door: {fileID: 1466928061}
 --- !u!1 &185477081
 GameObject:
   m_ObjectHideFlags: 0
@@ -23341,7 +23342,7 @@ RectTransform:
   - {fileID: 576188907}
   - {fileID: 1524520549}
   m_Father: {fileID: 1837239581}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -31597,6 +31598,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 527802388}
+  - 114: {fileID: 527802389}
   m_Layer: 9
   m_Name: Spawner1
   m_TagString: Puzzle
@@ -31622,6 +31624,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 2000}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &527802389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 527802387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba32c9a030b847fb9a340def4d147f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1049035111}
+  door: {fileID: 1006124631}
+  controls:
+  - {fileID: 1729610817}
+  - {fileID: 1760651752}
+  - {fileID: 964630875}
+  - {fileID: 1119558411}
+  gos: []
 --- !u!1 &528919639
 GameObject:
   m_ObjectHideFlags: 0
@@ -44177,6 +44198,81 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &737726535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 737726536}
+  - 222: {fileID: 737726538}
+  - 114: {fileID: 737726537}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Puzzle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &737726536
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 737726535}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3840.0007}
+  m_LocalScale: {x: 2, y: 2, z: 42.666668}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1049035113}
+  m_Father: {fileID: 1837239581}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -56, y: -267}
+  m_SizeDelta: {x: 221, y: 61}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &737726537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 737726535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: DODGE THE STARS
+--- !u!222 &737726538
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 737726535}
 --- !u!1 &737892024
 GameObject:
   m_ObjectHideFlags: 0
@@ -47799,7 +47895,7 @@ GameObject:
   - 4: {fileID: 801784553}
   - 212: {fileID: 801784554}
   m_Layer: 0
-  m_Name: Life
+  m_Name: Life1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47813,7 +47909,7 @@ Transform:
   m_GameObject: {fileID: 801784552}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -356, y: -250, z: -3840}
-  m_LocalScale: {x: 35, y: 35, z: 42.666668}
+  m_LocalScale: {x: 30, y: 35, z: 42.666668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1859432860}
@@ -59963,7 +60059,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 990452987}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10, y: 10, z: 0}
+  m_LocalPosition: {x: -9.81, y: 10.76, z: 0}
   m_LocalScale: {x: 0.28846094, y: 0.28846094, z: 0.5769219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -59995,6 +60091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 990452987}
+  text: {fileID: 0}
   player: {fileID: 1009034159}
   gos: []
   controls:
@@ -61485,7 +61582,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1006124631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 2, z: 0}
+  m_LocalPosition: {x: -2.81, y: 2.76, z: 0}
   m_LocalScale: {x: 0.28846094, y: 0.28846094, z: 0.5769219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -61517,6 +61614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 1006124631}
+  text: {fileID: 737726535}
   player: {fileID: 1009034159}
   gos: []
   controls:
@@ -61779,7 +61877,7 @@ GameObject:
   - 50: {fileID: 1009034157}
   - 114: {fileID: 1009034159}
   - 82: {fileID: 1009034160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: player_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64300,6 +64398,80 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!1 &1049035110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1049035113}
+  - 222: {fileID: 1049035112}
+  - 114: {fileID: 1049035111}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1049035111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049035110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 8
+--- !u!222 &1049035112
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049035110}
+--- !u!224 &1049035113
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049035110}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 737726536}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 154, y: 4.3749695}
+  m_SizeDelta: {x: 61, y: 43.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1051890971
 GameObject:
   m_ObjectHideFlags: 0
@@ -74341,6 +74513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 1201483499}
+  text: {fileID: 0}
   player: {fileID: 1009034159}
   gos: []
   controls:
@@ -74363,7 +74536,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
 --- !u!212 &1201483503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -90651,6 +90824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 1466928061}
+  text: {fileID: 0}
   player: {fileID: 1009034159}
   gos: []
   controls:
@@ -97883,7 +98057,7 @@ GameObject:
   - 124: {fileID: 1556787388}
   - 81: {fileID: 1556787387}
   - 82: {fileID: 1556787392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -98305,7 +98479,7 @@ GameObject:
   - 4: {fileID: 1559237815}
   - 212: {fileID: 1559237816}
   m_Layer: 0
-  m_Name: Life
+  m_Name: Life2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98319,7 +98493,7 @@ Transform:
   m_GameObject: {fileID: 1559237814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -356, y: -375, z: -3840}
-  m_LocalScale: {x: 35, y: 35, z: 42.666668}
+  m_LocalScale: {x: 30, y: 35, z: 42.666668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1859432860}
@@ -106726,7 +106900,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1682361860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113475,6 +113649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 1770890677}
+  text: {fileID: 0}
   player: {fileID: 1009034159}
   gos: []
   controls:
@@ -114715,7 +114890,7 @@ GameObject:
   - 114: {fileID: 1788266380}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: Control
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114728,7 +114903,7 @@ RectTransform:
   m_GameObject: {fileID: 1788266378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 694069914}
@@ -114751,14 +114926,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -117396,7 +117571,7 @@ GameObject:
   - 4: {fileID: 1831166475}
   - 212: {fileID: 1831166476}
   m_Layer: 0
-  m_Name: Life
+  m_Name: Life3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117410,7 +117585,7 @@ Transform:
   m_GameObject: {fileID: 1831166474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -356, y: -500, z: -3840}
-  m_LocalScale: {x: 35, y: 35, z: 42.666668}
+  m_LocalScale: {x: 30, y: 35, z: 42.666668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1859432860}
@@ -117885,6 +118060,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 737726536}
   - {fileID: 375865380}
   m_Father: {fileID: 1623741869}
   m_RootOrder: 11
@@ -128228,6 +128404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 0}
+  text: {fileID: 0}
   player: {fileID: 0}
   gos: []
   controls: []
@@ -133588,7 +133765,7 @@ MonoBehaviour:
   - {fileID: 1760651752}
   - {fileID: 964630875}
   - {fileID: 1119558411}
-  door: {fileID: 0}
+  door: {fileID: 1770890677}
 --- !u!224 &2045411505
 RectTransform:
   m_ObjectHideFlags: 0
@@ -137064,9 +137241,9 @@ GameObject:
   - 114: {fileID: 2098490380}
   - 61: {fileID: 2098490384}
   - 114: {fileID: 2098490383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorTrigger1
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -137110,7 +137287,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098490379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.75, y: 4.2, z: 0}
+  m_LocalPosition: {x: 9, y: 4.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -137128,6 +137305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BJewel: {fileID: 2045411503}
+  text: {fileID: 0}
   player: {fileID: 1009034159}
   gos: []
   controls: []

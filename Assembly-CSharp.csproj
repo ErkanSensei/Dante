@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\score.cs" />
      <Compile Include="Assets\Scripts\trajectorypath.cs" />
      <Compile Include="Assets\Scripts\win.cs" />
+     <Compile Include="Assets\SpawnAndDestroy.cs" />
      <Compile Include="Assets\TriggerBall.cs" />
      <Compile Include="Assets\start.cs" />
      <None Include="Assets\temp.txt" />

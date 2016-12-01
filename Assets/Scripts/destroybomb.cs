@@ -99,9 +99,7 @@ public class destroybomb : MonoBehaviour {
 
 }
 	void Update(){
-		
-		WordText.text = "score: " + score.ToString ();	
-		if (score >= 40) {
+			if (score >= 40) {
 			Debug.Log ("WIn Function Called!");
 			WIN1.WinText.text= "You Win!";
 			 new WaitForSeconds(5f);
