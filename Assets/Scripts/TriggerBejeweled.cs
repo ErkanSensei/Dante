@@ -16,7 +16,7 @@ public class TriggerBejeweled : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if (!entered) {
+		if (!entered && other.gameObject.GetComponent<Player>() == player) {
 			gos = GameObject.FindGameObjectsWithTag("Puzzle");
 			controls = GameObject.FindGameObjectsWithTag ("Control");
 			//loop through the returned array of game objects and set each to active false

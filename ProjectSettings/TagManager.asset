@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Control
   - Puzzle
+  - Door
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+	private Animator animator;
 	public float speed = 10;
 	public bool moveRight, moveLeft, moveUp, moveDown;
 	public AudioClip walkSound;
@@ -16,49 +17,44 @@ public class Player : MonoBehaviour {
 
 	void Awake() {
 		source = GetComponent<AudioSource>();
+		animator = this.GetComponent<Animator> ();
 		counter = 0;
 	}
 	void Update () {
 		//Move Horizontal
 		float h = Input.GetAxisRaw ("Horizontal");
 		counter++;
-		if(moveRight) {
-			GetComponent<Rigidbody2D> ().velocity = Vector2.right * 1 * Mathf.Clamp(speed, 0, 30);
+		if (moveRight) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.right * 1 * Mathf.Clamp (speed, 0, 30);
 			vol = Random.Range (volLowRange, volHighRange);
 			if (counter % 10 == 0) {
 				source.PlayOneShot (walkSound, vol);
 			}
-		}
-
-		if(moveLeft) {
-			GetComponent<Rigidbody2D> ().velocity = Vector2.right * -1 * Mathf.Clamp(speed, 0, 30);
+			animator.SetInteger ("Direction", 1);
+		} else if (moveLeft) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.right * -1 * Mathf.Clamp (speed, 0, 30);
 			vol = Random.Range (volLowRange, volHighRange);
 			if (counter % 10 == 0) {
 				source.PlayOneShot (walkSound, vol);
 			}
-		}
-
-		if(moveUp) {
-			GetComponent<Rigidbody2D> ().velocity = Vector2.up * 1 * Mathf.Clamp(speed, 0, 30);
+			animator.SetInteger ("Direction", 2);
+		} else if (moveUp) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.up * 1 * Mathf.Clamp (speed, 0, 30);
 			vol = Random.Range (volLowRange, volHighRange);
 			if (counter % 10 == 0) {
 				source.PlayOneShot (walkSound, vol);
 			}
-		}
-		if(moveDown) {
-			GetComponent<Rigidbody2D> ().velocity = Vector2.up * -1 * Mathf.Clamp(speed, 0, 30);
+			animator.SetInteger ("Direction", 3);
+		} else if (moveDown) {
+			GetComponent<Rigidbody2D> ().velocity = Vector2.up * -1 * Mathf.Clamp (speed, 0, 30);
 			vol = Random.Range (volLowRange, volHighRange);
 			if (counter % 10 == 0) {
 				source.PlayOneShot (walkSound, vol);
 			}
+			animator.SetInteger ("Direction", 0);
+		} else {
+			animator.SetInteger ("Direction", 4);
 		}
-		//Gravity Change
-		if (Input.GetKeyDown (KeyCode.Space) && isGrounded()) {
-			GetComponent<Rigidbody2D> ().gravityScale *= -1;
-			transform.Rotate (0, 180, 180);
-		}
-		// Animation
-		GetComponent<Animator>().SetInteger("DirX", (int)h);
 	}
 	public void MoveMeRight()
 	{
